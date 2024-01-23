@@ -54,8 +54,6 @@ $acc=$_POST['accounts'];
 $os=$_POST['os'];
 $total=$_POST['total_marks'];
 $percentage=$_POST['percentage'];
-
-
 $sql = "insert into results values(".$htno.",'".$name."',".$dms.",".$co.",".$java.",".$acc.",".$os.",".$total.",".$percentage.")";
 echo $sql; 
 
@@ -64,9 +62,6 @@ if(mysqli_query($conn, $sql)){
 }else{  
 echo "Could not insert record: ". mysqli_error($conn);  
 } 
-
-
-
 mysqli_close($conn);  
 }
 ?>  
